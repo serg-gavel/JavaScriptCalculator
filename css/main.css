@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("https://fonts.googleapis.com/css?family=Bubbler+One");
+/*default*/
+html {
+  min-height: 100%;
+  position: relative;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+body {
+  background: #abbaab;
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+  background: linear-gradient(to right, #ffffff, #abbaab);
+  font-family: "Bubbler One", sans-serif;
+  margin-bottom: 40px; }
+
+/*header*/
+header .header-text {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 300%;
+  font-family: "Bubbler One", sans-serif; }
+  header .header-text i {
+    color: #009700; }
+
+/*main*/
+.calc-body {
+  float: left;
+  background: #CACCCB;
+  height: 400px;
+  width: 282px;
+  margin-top: 50px;
+  margin-left: 25px;
+  -webkit-box-shadow: 10px 10px 31px 0 #464546;
+  -moz-box-shadow: 10px 10px 31px 0 #464546;
+  box-shadow: 10px 10px 31px 0 #464546;
+  border: 10px solid rgba(142, 158, 171, 0.25);
+  border-radius: 10px;
+  margin-bottom: 40px; }
+  .calc-body::after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 43px;
+    height: 400px;
+    width: 282px;
+    border-radius: 10px;
+    z-index: -1; }
+  .calc-body .calc-name {
+    margin-top: 10px;
+    margin-left: 80px;
+    position: absolute; }
+    .calc-body .calc-name P {
+      color: rgba(142, 158, 171, 0.9); }
+  .calc-body .calc-display {
+    position: relative;
+    background: #7D9678;
+    height: 100px;
+    width: 243px;
+    margin: 40px 20px 0 10px;
+    border: 4px solid rgba(142, 158, 171, 0.6);
+    -webkit-box-shadow: inset -1px -2px 19px 3px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: inset -1px -2px 19px 3px rgba(0, 0, 0, 0.26);
+    box-shadow: inset -1px -2px 19px 3px rgba(0, 0, 0, 0.26);
+    overflow: hidden; }
+    .calc-body .calc-display .display {
+      padding-top: 53px;
+      padding-left: 6px; }
+      .calc-body .calc-display .display span#digits {
+        float: right;
+        padding-right: 5px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        color: rgba(69, 82, 95, 0.9); }
+  .calc-body .calc-buttons {
+    padding-left: 7px;
+    padding-top: 7px; }
+    .calc-body .calc-buttons button {
+      height: 40px;
+      width: 40px;
+      margin-top: 10px;
+      margin-left: 5px;
+      background: rgba(38, 42, 51, 0.8);
+      color: #eef2f3;
+      border-radius: 10px;
+      outline: none; }
+      .calc-body .calc-buttons button:hover {
+        cursor: pointer; }
+    .calc-body .calc-buttons button.big-btn {
+      height: 90px;
+      position: relative;
+      float: right;
+      top: 0;
+      left: -18px; }
+    .calc-body .calc-buttons button#ac,
+    .calc-body .calc-buttons button#ce {
+      background: #64212A; }
+      .calc-body .calc-buttons button#ac:active,
+      .calc-body .calc-buttons button#ce:active {
+        position: relative;
+        top: 2px; }
+    .calc-body .calc-buttons button:active {
+      position: relative;
+      top: 2px; }
+
+/*footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px; }
+  footer .contacts-inner {
+    text-align: center;
+    margin: 0 auto;
+    width: 150px;
+    position: relative; }
+    footer .contacts-inner i {
+      font-size: 300%;
+      padding-right: 5px; }
+    footer .contacts-inner a .fa-facebook-official {
+      color: #4867AA; }
+    footer .contacts-inner a .fa-github-square {
+      color: #464f59; }
+    footer .contacts-inner a .fa-twitter-square {
+      color: #41ABE1; }
+    footer .contacts-inner a:hover .fa-facebook-official {
+      color: #6782be; }
+    footer .contacts-inner a:hover .fa-github-square {
+      color: #515c67; }
+    footer .contacts-inner a:hover .fa-twitter-square {
+      color: #6dbee8; }
